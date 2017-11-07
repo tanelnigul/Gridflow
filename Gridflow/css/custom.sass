@@ -1,0 +1,240 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css?family=Muli|Raleway')
+
+// VARIABLES
+$open-sans: 'Open Sans', sans-serif
+$raleway: 'Raleway', sans-serif
+$muli: 'Muli', sans-serif
+$blue: #0072ff
+$light-blue: #3d94ff
+$red: #d92f2f
+$green: #3eda75
+$black: #333
+$subtle-black: #53576a
+$light-subtle-black: #7e829c
+$grey: #555
+$light-grey: #999
+
+// TYPOGRAPHY
+h1
+  font-family: $raleway !important
+  font-weight: 500 !important
+  font-size: 60px !important
+  color: white !important
+
+h2
+  font-family: $raleway !important
+  font-size: 30px !important
+  color: $black
+
+h3
+  font-family: $raleway !important
+  font-size: 20px !important
+  color: $black
+
+h4
+  font-family: $raleway !important
+  font-size: 18px !important
+  font-weight: 500 !important
+  letter-spacing: 2px
+  text-transform: uppercase
+  color: white !important
+
+h5
+  font-family: $raleway !important
+  font-size: 22px !important
+  color: white !important
+  line-height: 1.5 !important
+  letter-spacing: 1px
+
+p
+  font-family: $muli
+  font-size: 17px
+  color: $light-subtle-black
+  line-height: 1.8 !important
+
+// STYLING
+body
+  background-color: #f7fbff !important
+  background-attachment: fixed
+  background-repeat: none
+  background-position: center
+  overflow-x: hidden
+
+// HEADER
+
+#logo
+  width: 200px
+  height: 37px
+  background-image: url('../img/logo.png')
+  position: absolute
+  margin-top: 35px
+  margin-left: 35px
+
+#header
+  height: 540px
+  background-image: url('../img/header-bg.jpg')
+  text-align: center
+
+.divider.white
+  width: 150px
+  height: 4px
+  background: white /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, white , white) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, white, white) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, white, white) /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, white , white) /* Standard syntax */
+  display: block
+  margin: auto
+  margin-top: 45px
+  margin-bottom: 45px
+
+h4.header
+  margin-bottom: 15px
+  padding-top: 100px
+
+h5.header
+  margin-top: 35px
+
+ul.nav
+  margin-top: 35px
+  margin-right: 35px
+  margin-bottom: 70px
+  position: absolute
+  right: 0px
+
+li.nav-item
+  margin-right: 45px
+
+a.nav-link
+  color: white
+  font-family: $muli
+  font-size: 17px
+  padding: 0
+  padding-bottom: 6px
+
+  &:hover
+    color: white
+    border-bottom: 2px solid white
+
+// END OF HEADER
+
+// CONTENT
+
+#cta
+  width: 780px
+  height: 280px
+  background-color: white
+  display: block
+  margin: auto
+  border-radius: 5px
+  margin-top: -140px
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2)
+  padding: 45px
+
+#emailHelp
+  font-family: $muli
+  color: rgba($light-subtle-black, 0.5) !important
+
+#exampleInputEmail1
+  width: 70%
+  border-top-right-radius: 0px
+  border-bottom-right-radius: 0px
+  height: 50px
+  margin-top: 35px
+  font-family: $raleway
+  font-size: 16px
+  letter-spacing: 1px
+
+  &:focus
+    border-color: $light-subtle-black
+
+.btn-primary.cta
+  width: 30%
+  border-top-left-radius: 0px
+  border-bottom-left-radius: 0px
+  height: 50px
+  margin-top: 35px
+  font-family: $raleway
+  font-size: 15px
+  font-weight: 600
+  letter-spacing: 1px
+  background-color: $subtle-black
+  border-color: $subtle-black
+  cursor: pointer
+
+  &:hover
+    background-color: $subtle-black
+    border-color: $subtle-black
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5)
+
+h5.cta
+  color: $subtle-black !important
+  font-size: 18px !important
+  text-align: center
+
+.divider
+  width: 150px
+  height: 4px
+  background: $blue /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, $light-blue , $blue) /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, $light-blue, $blue) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, $light-blue, $blue) /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, $light-blue , $blue) /* Standard syntax */
+  display: block
+  margin-top: 35px
+  margin-bottom: 35px
+
+.divider.right
+  float: right
+
+p.right
+  text-align: right
+
+h2.main
+  color: $subtle-black
+  margin-top: 30px
+
+.main.right
+  text-align: right
+
+.container
+  margin-top: 45px
+  max-width: 800px !important
+  margin-bottom: 25px
+
+// END OF CONTENT
+
+// FOOTER
+
+.container.footer
+  margin-top: 50px
+  border-top: 1px solid rgba(0,0,0,0.1)
+  padding-top: 50px
+
+h5.footer
+  color: $subtle-black !important
+  font-family: $raleway !important
+  font-size: 15px !important
+  font-weight: bold
+  margin-bottom: 15px
+
+ul.footer
+  padding: 0
+
+li.footer
+  list-style: none
+  padding-bottom: 10px
+
+a.footer
+  color: $light-subtle-black
+  font-family: $muli
+
+  &:hover
+    color: $subtle-black
+    text-decoration: none
+
+p.copyright
+  margin-top: 25px
+  font-size: 15px
+  opacity: 0.5
